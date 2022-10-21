@@ -1,0 +1,51 @@
+﻿body {
+    margin: 0px auto;
+    font-family: Arial;
+}
+#cabecera {
+    text-align: center;
+}
+#menu ul {
+    list-style: none;
+    margin: 0px auto;
+    text-align: center;
+}
+#menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+#menu ul li a {
+    display: block;
+    padding: 8px;
+}
+h2 {
+    text-align: center;
+}
+.cuerpo {
+    border: 1px groove blue;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 50%;
+}
+.textos {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+    text-align: right;
+}
+.boton {
+    margin-top: 12px;
+    text-align: center;
+}
+#cmdEnviar {
+    padding: 10px;
+    width: 100px;
+}
+#cmdEnviar:hover {
+    cursor: pointer;
+}
+#rblSexEmp {
+    display: inline;
+    vertical-align: bottom;
+}
