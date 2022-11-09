@@ -49,3 +49,36 @@ h2 {
     display: inline;
     vertical-align: bottom;
 }
+
+/*Empleados calendar*/
+.cuerpo-calendar {
+    border: 1px groove #FF0000;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 75%;
+}
+.valores {
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+}
+.errores {
+    width: 60%;
+    background: #f13c3cde;
+    text-align: center;
+    margin: 20px auto;
+}
+.antiguedad {
+    display: inline-block;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px auto;
+}
+.flex-content {
+    margin: 10px;
+}
