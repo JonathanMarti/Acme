@@ -11,7 +11,20 @@ namespace GesPresta
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Trace.Write("Evento", "Entrando en Page_Load");
+
             txtCodEmp.Focus();
+
+            /*int a = 3;
+            int b = 0;
+            int c = a / b;*/
+            if (Trace.IsEnabled)
+            {
+                txtNifEmp.Text = "1111111";
+                Trace.Warn("Asignación", "Cambiado el valor de txtNifEmp a: " + txtNifEmp.Text);
+            }
+
+            Trace.Write("Evento", "Saliendo de Page_Load");
         }
     }
 }

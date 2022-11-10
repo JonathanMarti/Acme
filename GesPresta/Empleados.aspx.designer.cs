@@ -33,6 +33,15 @@ namespace GesPresta
         protected global::GesPresta.Cabecera Cabecera1;
 
         /// <summary>
+        /// Control rqdTxtCodEmp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtCodEmp;
+
+        /// <summary>
         /// Control txtCodEmp.
         /// </summary>
         /// <remarks>
@@ -42,6 +51,15 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.TextBox txtCodEmp;
 
         /// <summary>
+        /// Control rqdTxtNifEmp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtNifEmp;
+
+        /// <summary>
         /// Control txtNifEmp.
         /// </summary>
         /// <remarks>
@@ -49,6 +67,15 @@ namespace GesPresta
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNifEmp;
+
+        /// <summary>
+        /// Control rqdTxtNomEmp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtNomEmp;
 
         /// <summary>
         /// Control txtNomEmp.
@@ -78,6 +105,15 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.TextBox txtCiudEmp;
 
         /// <summary>
+        /// Control rqdTxtTelEmp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtTelEmp;
+
+        /// <summary>
         /// Control txtTelEmp.
         /// </summary>
         /// <remarks>
@@ -87,6 +123,15 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.TextBox txtTelEmp;
 
         /// <summary>
+        /// Control rqdTxtFnaEmp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtFnaEmp;
+
+        /// <summary>
         /// Control txtFnaEmp.
         /// </summary>
         /// <remarks>
@@ -94,6 +139,15 @@ namespace GesPresta
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFnaEmp;
+
+        /// <summary>
+        /// Control rqdTxtFinEmp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdTxtFinEmp;
 
         /// <summary>
         /// Control txtFinEmp.

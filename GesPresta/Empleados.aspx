@@ -14,22 +14,41 @@
     <form id="form1" runat="server">
         <uc1:Cabecera ID="Cabecera1" runat="server" />
         <div>
-            <h2>DATOS DE LOS EMPLEADOS</h2>
+            <h2>DATOS DE LOS EMPLEADOS
+            </h2>
             <div class="cuerpo">
+                <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
+                <asp:RequiredFieldValidator ID="rqdTxtCodEmp" runat="server" ErrorMessage="El código de empleado es obligatorio" ControlToValidate="txtCodEmp" Display="Dynamic"></asp:RequiredFieldValidator>
+                </div>
                 <div class="textos">Código empleado</div>
                 <asp:TextBox ID="txtCodEmp" runat="server"></asp:TextBox>
+                <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
+                <asp:RequiredFieldValidator ID="rqdTxtNifEmp" runat="server" ErrorMessage="El NIF del empleado es obligatorio" ControlToValidate="txtNifEmp" Display="Dynamic"></asp:RequiredFieldValidator>
+                </div>
                 <div class="textos">NIF</div>
                 <asp:TextBox ID="txtNifEmp" runat="server"></asp:TextBox>
+                <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
+                <asp:RequiredFieldValidator ID="rqdTxtNomEmp" runat="server" ErrorMessage="El campo de Nombre y apellidos es obligatorio" ControlToValidate="txtNomEmp" Display="Dynamic"></asp:RequiredFieldValidator>
+                </div>
                 <div class="textos">Apellidos y Nombre</div>
                 <asp:TextBox ID="txtNomEmp" runat="server" Width="300px"></asp:TextBox>
                 <div class="textos">Dirección</div>
                 <asp:TextBox ID="txtDirEmp" runat="server" Width="325px"></asp:TextBox>
                 <div class="textos">Ciudad</div>
                 <asp:TextBox ID="txtCiudEmp" runat="server" Width="325px"></asp:TextBox>
+                <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
+                <asp:RequiredFieldValidator ID="rqdTxtTelEmp" runat="server" ErrorMessage="El campo de teléfono es obligatorio" ControlToValidate="txtTelEmp" Display="Dynamic"></asp:RequiredFieldValidator>
+                </div>
                 <div class="textos">Teléfono</div>
                 <asp:TextBox ID="txtTelEmp" runat="server" Width="250px"></asp:TextBox>
+                <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
+                <asp:RequiredFieldValidator ID="rqdTxtFnaEmp" runat="server" ErrorMessage="La fecha de nacimiento es obligatoria" ControlToValidate="txtFnaEmp" Display="Dynamic"></asp:RequiredFieldValidator>
+                </div>
                 <div class="textos">Fecha de nacimiento</div>
                 <asp:TextBox ID="txtFnaEmp" runat="server"></asp:TextBox>
+                <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
+                <asp:RequiredFieldValidator ID="rqdTxtFinEmp" runat="server" ErrorMessage="La fecha de ingreso es obligatoria" ControlToValidate="txtFinEmp" Display="Dynamic"></asp:RequiredFieldValidator>
+                </div>
                 <div class="textos">Fecha de ingreso</div>
                 <asp:TextBox ID="txtFinEmp" runat="server"></asp:TextBox>
                 <div class="textos">Sexo</div>
