@@ -1,20 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Empleados.aspx.cs" Inherits="GesPresta.Empleados" %>
-
-<%@ Register src="Cabecera.ascx" tagname="Cabecera" tagprefix="uc1" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-<link rel="stylesheet" type="text/css" href="Styles.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
-        <uc1:Cabecera ID="Cabecera1" runat="server" />
-        <div>
-            <h2>DATOS DE LOS EMPLEADOS</h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MPEmpleados.aspx.cs" Inherits="GesPresta.MPEmpleados" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+                <h2>DATOS DE LOS EMPLEADOS</h2>
             <div class="cuerpo">
                 <div class="textos">Código empleado</div>
                 <asp:TextBox ID="txtCodEmp" runat="server"></asp:TextBox>
@@ -63,7 +51,4 @@
                     <asp:ValidationSummary runat="server" DisplayMode="List" ForeColor="Red" /> 
                 </div>
             </div>
-        </div>
-    </form>
-</body>
-</html>
+</asp:Content>

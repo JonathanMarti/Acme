@@ -27,7 +27,7 @@ h2 {
     margin: auto;
     padding-top: 15px;
     padding-bottom: 10px;
-    width: 50%;
+    width: 80%;
 }
 .textos {
     display: inline-block;
@@ -47,6 +47,10 @@ h2 {
     cursor: pointer;
 }
 #rblSexEmp {
+    display: inline;
+    vertical-align: bottom;
+}
+#ContentPlaceHolder1_rblSexEmp {
     display: inline;
     vertical-align: bottom;
 }

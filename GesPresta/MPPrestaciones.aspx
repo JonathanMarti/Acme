@@ -1,20 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Prestaciones.aspx.cs" Inherits="GesPresta.Prestaciones" %>
-
-<%@ Register src="Cabecera.ascx" tagname="Cabecera" tagprefix="uc1" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="stylesheet" type="text/css" href="Styles.css" />
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <uc1:Cabecera ID="Cabecera1" runat="server" />
-            <h2>DATOS DE LAS PRESTACIONES</h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MPPrestaciones.aspx.cs" Inherits="GesPresta.MPPrestaciones" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+                <h2>DATOS DE LAS PRESTACIONES</h2>
             <div class="cuerpo">
                 <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
                 <asp:RequiredFieldValidator ID="rqdtxtCodPre" runat="server" ErrorMessage="El código de prestación es obligatorio" ControlToValidate="txtCodPre" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -47,7 +35,4 @@
                     <asp:Button ID="cmdEnviar" runat="server" Text="Enviar"/>
                 </div>
             </div>
-        </div>
-    </form>
-</body>
-</html>
+</asp:Content>

@@ -1,6 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Prestaciones.aspx.cs" Inherits="GesPresta.Prestaciones" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Prestaciones2.aspx.cs" Inherits="GesPresta.Prestaciones2" %>
 
 <%@ Register src="Cabecera.ascx" tagname="Cabecera" tagprefix="uc1" %>
+
+<%@ Register src="prestacionesBuscar.ascx" tagname="prestacionesBuscar" tagprefix="uc2" %>
 
 <!DOCTYPE html>
 
@@ -21,7 +23,11 @@
                 <asp:RegularExpressionValidator ID="regTxtCodPre" runat="server" ValidationExpression="\d{3}-\d{3}-\d{3}" ErrorMessage="El formato de los datos es: 3 dígitos, un guión, 3 dígitos un guión y 3 dígitos" ControlToValidate="txtCodPre" Display="Dynamic"></asp:RegularExpressionValidator>
                 </div>
                 <div class="textos">Código Prestación</div>
-                <asp:TextBox ID="txtCodPre" runat="server"></asp:TextBox>
+                <div class="prestacionesBuscar" style="float:right; margin: 10px;">
+                <uc2:prestacionesBuscar ID="prestacionesBuscar1" runat="server" Visible="False" />
+                <div class="boton"><asp:Button ID="btnSeleccionar" runat="server" CausesValidation="False" Text="Seleccionar" Visible="False" OnClick="btnSeleccionar_Click" /></div>
+                </div>
+                <asp:TextBox ID="txtCodPre" runat="server"></asp:TextBox><asp:Button ID="btnVerPrestaciones" style="margin-left:5px;" runat="server" Text="Ver Prestaciones" CausesValidation="false" OnClick="btnVerPrestaciones_Click" />
                 <div class="textos">Descripción</div>
                 <asp:TextBox ID="txtDesPre" runat="server" Width="300px"></asp:TextBox>
                 <div class="validacion" style="width:50%; margin:auto; text-align:center;color:red;">
