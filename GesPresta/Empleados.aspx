@@ -14,8 +14,7 @@
     <form id="form1" runat="server">
         <uc1:Cabecera ID="Cabecera1" runat="server" />
         <div>
-            <h2>DATOS DE LOS EMPLEADOS
-            </h2>
+            <h2>DATOS DE LOS EMPLEADOS</h2>
             <div class="cuerpo">
                 <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
                 <asp:RequiredFieldValidator ID="rqdTxtCodEmp" runat="server" ErrorMessage="El código de empleado es obligatorio" ControlToValidate="txtCodEmp" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -43,6 +42,9 @@
                 <asp:TextBox ID="txtTelEmp" runat="server" Width="250px"></asp:TextBox>
                 <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
                 <asp:RequiredFieldValidator ID="rqdTxtFnaEmp" runat="server" ErrorMessage="La fecha de nacimiento es obligatoria" ControlToValidate="txtFnaEmp" Display="Dynamic"></asp:RequiredFieldValidator>
+                </div>
+                <div class="validacion" style="width:50%;margin:auto;text-align:center;color:red;">
+                    <asp:CompareValidator ID="cmpTxtFnaEmp" runat="server" ErrorMessage="La Fecha de Ingreso del Empleado debe ser mayor que la Fecha de Nacimiento" ControlToValidate="txtFnaEmp" Display="Dynamic" ControlToCompare="txtFinEmp" Type="Date" Operator="LessThan"></asp:CompareValidator>
                 </div>
                 <div class="textos">Fecha de nacimiento</div>
                 <asp:TextBox ID="txtFnaEmp" runat="server"></asp:TextBox>
